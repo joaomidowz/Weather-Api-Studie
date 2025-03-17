@@ -33,7 +33,7 @@ export function ForecastContainer({ city }: { city: string }) {
     };
 
     return (
-        <div className="grid grid-cols-5 gap-3">
+        <div className="grid grid-auto-rows-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3">
             {forecast?.map((forecast: { dt_txt: string; main: { temp: string; feels_like: string; temp_max: string; temp_min: string; }; weather: { description: string; }[]; }, index: React.Key | null | undefined) => (
                 <ForecastCard
                     key={index}
