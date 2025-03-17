@@ -1,12 +1,10 @@
-// app/routes/teste.tsx
-import type { Route } from "./+types/home"; // Tipagem do React Router
-
+import type { Route } from "../+types/root";
 import { Teste } from "../pages/teste"; // Importando a página Teste
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Página Teste" },
-    { name: "description", content: "Esta é a página de teste." },
+    { title: "Tempo" },
+    { name: "description", content: "Vendo a preivsão do tempo e o tempo!" },
   ];
 }
 
