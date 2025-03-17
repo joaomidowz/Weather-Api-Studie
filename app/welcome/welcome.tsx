@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
 
@@ -17,6 +18,7 @@ export function Welcome() {
               alt="React Router"
               className="hidden w-full dark:block"
             />
+            
           </div>
         </header>
         <div className="max-w-[300px] w-full space-y-6 px-4">
@@ -38,6 +40,7 @@ export function Welcome() {
                   </a>
                 </li>
               ))}
+              <li><Link to={"/teste"}>Teste            </Link></li>
             </ul>
           </nav>
         </div>
