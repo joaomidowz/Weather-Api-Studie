@@ -34,7 +34,17 @@ export const getWeatherStyles = (condition: string) => {
         ...baseStyles,
         emoji: '🌧️',
         background: 'bg-blue-100',
-        text: 'text-blue-900',
+        text: 'text-blue-700',
+        animation: 'rain-animation'
+      };
+    }
+
+    if (normalized.includes('trovoada') || normalized.includes('rain')) {
+      return {
+        ...baseStyles,
+        emoji: '⛈️',
+        background: 'bg-blue-900',
+        text: 'text-blue-100',
         animation: 'rain-animation'
       };
     }

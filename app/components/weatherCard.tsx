@@ -29,8 +29,8 @@ export function WeatherCard({ city, country, temp, min, max, condition, rain }: 
             <div className="relative z-10">
                 <h1 className="text-2xl font-bold flex items-center gap-4">
                     <span className="text-3xl"></span>
-                    Tempo em {city} 
                     <span className="text-2xl">{styles.emoji}</span>
+                    Tempo em {city} 
                 </h1>
                 
                 <div className="space-y-2">
