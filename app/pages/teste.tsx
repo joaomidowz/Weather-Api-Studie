@@ -11,7 +11,7 @@ export function Teste() {
         if (!city) return;
 
         const weatherData = await getWeather(city)
-        setWeather(weatherData) 
+        setWeather(weatherData)
     }
 
     return (
@@ -25,15 +25,17 @@ export function Teste() {
                         city={weather.name}
                         country={weather.sys.country}
                         temp={weather.main.temp}
+                        min={weather.main.temp_min.toFixed(1)}
+                        max={weather.main.temp_max.toFixed(1)}
                         condition={weather.weather[0].description}
                         rain={weather.rain ? `${weather.rain["1h"]} mn` : "Sem chuva"}
                     />
                 )}
                 <div className="px-5">
-                <p className="text-secundary text-center text-3xl font-extrabold">Previsão:</p>
-                <ForecastContainer
-                city={city}
-                />
+                    <p className="text-secundary text-center text-3xl font-extrabold">Previsão:</p>
+                    <ForecastContainer
+                        city={city}
+                    />
                 </div>
             </div>
         </main>

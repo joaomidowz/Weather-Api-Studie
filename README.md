@@ -16,7 +16,7 @@ A modern, production-ready template for building full-stack React applications u
 
 ## Getting Started
 
-### Installation
+### Installation >
 
 Install the dependencies:
 
