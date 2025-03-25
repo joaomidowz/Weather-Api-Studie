@@ -18,6 +18,16 @@ export const getWeatherStyles = (condition: string) => {
         animation: 'cloudy-animation'
       };
     }
+
+    if (normalized.includes('nuvens') || normalized.includes('cloud')) {
+      return {
+        ...baseStyles,
+        emoji: '☁️',
+        background: 'bg-gray-100',
+        text: 'text-gray-700',
+        animation: 'cloudy-animation'
+      };
+    }
   
     if (normalized.includes('algumas') || normalized.includes('cloudy')) {
         return {
